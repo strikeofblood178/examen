@@ -1,0 +1,88 @@
+.section2{
+    max-width: 1920px;
+height: 723px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 0 auto;
+ background: rgb(184, 184, 213);
+}
+.section2__title{
+    text-align: center;
+
+
+}
+.title__services{
+    font-family: 'Product Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #F16214;
+}
+.title__text{
+    font-family: 'Product Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 49px;
+margin-top: 6px;
+margin-bottom: 59px;
+}
+.section2__colum{
+    display: flex;
+    gap: 30px;
+    
+}
+.section2__card{
+    display: flex;
+    gap: 30px;
+   
+}
+.card__border{
+    width: 370px;
+height: 395px;
+
+
+border: 2px solid #EEEEEE;
+border-radius: 60px 0px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.img__block{
+    width: 80px;
+height: 80px;
+border-radius: 50%;
+
+background: rgba(241, 98, 20, 0.15);
+@include flex($cross: center, $main: center);
+
+}
+.card_title{
+    font-family: 'Product Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 32px;
+margin-top: 44px;
+margin-bottom: 22px;
+}
+.card_text{
+    font-family: 'Product Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+/* or 26px */
+
+text-align: center;
+
+color: #888888;
+}

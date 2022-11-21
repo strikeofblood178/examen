@@ -1,0 +1,51 @@
+.header{
+    max-width: 120rem;
+    height: 105px;
+    background: var(--light);
+    @include flex($cross: center, $main: center);
+    margin: 0 auto;
+    background: rgb(184, 184, 213);
+    &__link{
+        text-decoration: none;
+    }
+}
+.header__container{
+    @include flex($main: space-between);
+    width: 60.375rem;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 1.75rem;
+    & :hover{
+        color: var(--primary);
+    }
+}
+.header__link{
+    color: var(--brand);
+    font-size: var(--size_average);
+}
+.header__log{
+    background: var(--primary);
+    border: 1.5px solid #F16214;
+    border-radius: 120px;
+    position: absolute;
+    right: 0;
+    padding: 7px 29px;
+    color: var(--light);
+}
+.header__btn{
+    width: 29.625rem;
+    position: relative;
+    @include flex($cross: center);
+    & :hover{
+        border: 2px solid var(--primary);
+        color: var(--brand);
+        background: var(--light);
+        cursor: pointer;
+        
+    }
+
+}

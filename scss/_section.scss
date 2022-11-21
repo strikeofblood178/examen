@@ -1,0 +1,98 @@
+.section__btn{
+  
+    background: #F16214;
+    border-radius: 54px;
+    width: 170px;
+    height: 50px;
+    color: white;
+    border: inherit;
+    display: flex;
+    justify-content: left;
+    padding-left: 19px;
+    transition: all .6s ease-in-out ;
+    margin-bottom: 40px;
+    }
+    .section__composit{
+    // display: flex;
+    position: relative;
+    /* transition: all .6s ease-in-out ; */
+    }
+    .section__composit :hover{
+    //   border: 2px solid #F16214;
+      color: #000;
+      cursor: pointer;
+      background: white;
+      transition: all .6s ease-in-out ;
+    }
+    .section__arrow{
+      background: #FFFFFF;
+      width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* right: 0px; */
+    top: 5px;
+    margin-left: 125px;
+    }
+
+
+    .section__strok{
+        display: flex;
+        gap: 23px;
+        /* transition: all .6s ease-in-out ; */
+        }
+        .section__strok :hover{
+          background-color: #F16214;
+          color: white;
+          transition: all .6s ease-in-out ;
+          
+        }
+        
+        .section__icon{
+          width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: #F16214;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .6s ease-in-out ;
+        
+        background: rgba(241, 98, 20, 0.15);
+        }
+        .section{
+            @include flex($cross: center,$main: center);
+            margin: 0 auto;
+            height: 740px;
+            max-width: 1920px;
+            background: rgb(184, 184, 213);
+        }
+
+    .section__h1{
+        font-family: 'Product Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 75px;
+        line-height: 91px;
+        margin: 0
+        ;
+    }
+    .section__text{
+        
+         font-family: 'Product Sans';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 150%;
+         max-width: 570px;;
+         /* or 24px */
+
+
+         color: #888888;
+         margin-top: 15px;
+         margin-bottom: 40px;
+    }

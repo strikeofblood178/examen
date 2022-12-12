@@ -1,51 +1,90 @@
 .header{
+    display: flex;
     max-width: 120rem;
     height: 105px;
     background: var(--light);
     @include flex($cross: center, $main: center);
     margin: 0 auto;
     background: rgb(184, 184, 213);
+
     &__link{
         text-decoration: none;
     }
 }
-.header__container{
-    @include flex($main: space-between);
-    width: 60.375rem;
+
+.header__type{
+    display: flex;
+    width: 120rem;
+    height: 6.5625rem;
+    background: var(--light);
+    @include flex($cross: center, $main: center);
+    margin: 0 auto;
+    background: rgb(184, 184, 213);
+    position: fixed;
+    z-index: 11;
 
 }
+
+
+// .header__container{
+//     @include flex($main: space-between);
+//     width: 59.9375rem;
+
+// }
+
+.header__padding{
+    width: 1703px;
+    padding-left: 175px;
+    @include flex($main: space-between);
+}
+
+
 .navbar{
     display: flex;
     align-items: center;
     text-decoration: none;
     gap: 1.75rem;
+    transition: var(--trs);
     & :hover{
         color: var(--primary);
+        transition: var(--trs);
+        // transform: scale(1.050);
+        text-decoration: underline;
     }
 }
 .header__link{
     color: var(--brand);
     font-size: var(--size_average);
+    transition: var(--trs);
 }
 .header__log{
     background: var(--primary);
     border: 1.5px solid #F16214;
     border-radius: 120px;
-    position: absolute;
-    right: 0;
+    // position: absolute;
+    // right: 0;
     padding: 7px 29px;
     color: var(--light);
+    transition: var(--trs);
 }
 .header__btn{
-    width: 29.625rem;
-    position: relative;
+    // width: 29.625rem;
+    // position: relative;
     @include flex($cross: center);
+    transition: var(--trs);
     & :hover{
         border: 2px solid var(--primary);
         color: var(--brand);
         background: var(--light);
         cursor: pointer;
+        transition: var(--trs);
         
     }
 
+}
+
+
+.sushi{
+    // display: inline;
+    justify-content: start;
 }

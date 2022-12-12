@@ -1,0 +1,147 @@
+.grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 120rem;
+    height: 1306px;
+    background: rgb(184, 184, 213);
+}
+
+.grid__text{
+text-align: center;
+}
+
+.grid__container{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 5.625rem;
+}
+.grid__box{
+    display: flex;
+    gap: 30px;
+}
+.grid__colum{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.grid__top {
+    width: 370px;
+    height: 419px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 7%);
+    border-radius: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+.grid__img {
+    width: 370px;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 50px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__image{
+    transition: var(--trs);
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.250);
+        transition: var(--trs);
+    }
+}
+
+
+
+
+.grid__row{
+    display: flex;
+    width: 332px;
+    justify-content: space-between;
+    margin-top: 16px;
+
+}
+.gridd__title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 19px;
+    font-family: 'Product Sans';
+    &:hover{
+        cursor: pointer;
+        color: var(--primary);
+        text-decoration: underline;
+    }
+}
+
+
+.grid__right {
+    /* margin-top: 33px; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.many{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 16px;
+    font-family: 'Product Sans';
+    &:hover{
+        cursor: pointer;
+        color: var(--primary);
+        text-decoration: underline;
+    }
+}
+
+.gtid__button{
+    width: 100px;
+    background: var(--primary);
+    border-radius: 50px;
+    @include flex($cross: center, $main: center);
+    color: var(--light);
+    height: 40px;
+    transition: var(--trs);
+    &:hover{
+        cursor: pointer;
+        background: var(--light);
+        color: var(--primary);
+        border: 2px solid var(--primary);
+        transition: var(--trs);
+    }
+
+}
+
+.span__img{
+    color: var(--primary);
+    display: flex;
+    gap: 5,25px;
+}
+.primary{
+    color: var(--brand);
+    margin-left: 5.25px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: 'Product Sans';
+    &:hover{
+        cursor: pointer;
+        color: var(--primary);
+        text-decoration: underline;
+    }
+}

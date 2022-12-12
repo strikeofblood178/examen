@@ -1,0 +1,123 @@
+.footer{
+    height: 477px;
+    background: #F5F5F5;
+    @include flex($cross: center, $main:center);
+    margin: 0 auto;
+    max-width: 1920px;
+    background: #F5F5F5;
+    flex-direction: column;
+}
+
+.footer__box{
+    @include flex($main: space-between);
+    width: 73.125rem;
+    margin-bottom: 3.8125rem;
+}
+
+.footer__left{
+    @include flex($gap: 3.625rem);
+}
+
+.footer__right{
+    @include flex($gap: 11rem);
+}
+
+.footer__text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #888888;
+    margin: 2.125rem 0;
+    max-width: 16.25rem;;
+}
+.footer__title{
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 150%;
+    color: #000000;
+}
+.footer__texteria{
+    font-style: normal;
+    font-size: 16px;
+    line-height: 200%;
+    font-weight: 400;
+    color: #888888;
+    margin-top: 2.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.input{
+    position: relative;
+    @include flex($cross: center, $main: end);
+}
+
+.footer_input{
+    width: 270px;
+    left: 1275px;
+    top: 6201px;
+    background: var(--light);
+    border-radius: 10px;
+    height: 50px;
+    border: inherit;
+    padding-left: 1.1875rem;
+}
+
+.footer__btn{
+    position: absolute;
+    border: inherit;
+    height: 40px;
+    background: #F16214;
+    color: var(--light);
+    border-radius: 10px;
+    width: 40px;
+    margin-right: 0.3125rem;
+    transition: var(--trs);
+    &:hover{
+        background: var(--light);
+        border: 2px solid var(--primary);
+        color: var(--primary);
+        transition: var(--trs);
+    }
+}
+
+.hare{
+    height: 0px;
+    left: 375px;
+    top: 6312px;
+    border: 1.5px solid #DDDDDD;
+    width: 1170px;
+    background: rgba(221, 221, 221, 1);
+    margin-bottom: 23px;
+}
+
+.footer__end{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 170%;
+    color: #888888;
+    font-style: normal;
+}
+.footer__link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #888888;
+    font-style: normal;
+    text-decoration: none;
+    transition: var(--trs);
+    &:hover{
+        cursor: pointer;
+        transition: var(--trs);
+        text-decoration: underline;
+    }
+}
+.footer__about{
+    margin-top: 2.25rem;
+}
+.footer__three{
+    display: flex;
+    flex-direction: column;
+}

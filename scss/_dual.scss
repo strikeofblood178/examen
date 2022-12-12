@@ -1,0 +1,77 @@
+// masanger2 
+
+
+.masanger__two{
+    max-width: 1918px;
+    height: 500px;
+    @include flex($cross: center, $main: center);
+    margin: 0 auto;
+    background: rgb(184, 184, 213);
+}
+
+
+
+.google{
+    width: 17.3125rem;
+}
+
+.masanger__block_two{
+    height: 18.75rem;
+    overflow: hidden;
+    width: 1170px;
+    border-radius: 60px 0px;
+    @include flex($cross: center, $main: center);
+}
+
+.hamburger{
+    width: 31.875rem;
+}
+
+.card_texteria{
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #888888;
+    max-width: 31.25rem;
+    margin-top: 0.9375rem;
+    margin-bottom: 1.8125rem;
+}
+
+
+
+.massanger__subcribe{
+    position: relative;
+    @include flex($cross: center, $main: end);
+}
+
+.masanger__btn1{
+    width: 500px;
+    height: 60px;
+    background: var(--light);
+    color: #CCCCCC;
+    border-radius: 13px;
+    padding-left: 19px;
+}
+
+
+.masanger__btn2{
+    width: 120px;
+    height: 50px;
+    background: var(--primary);
+    color: var(--light);
+    border-radius: 13px;
+    position: absolute;
+    border: inherit;
+    margin-right: 0.3125rem;
+    transition: var(--trs);
+    &:hover{
+        cursor: pointer;
+        color: var(--primary);
+        background: var(--light);
+        border: 2px solid var(--primary);
+        transition: var(--trs);
+    }
+}
+

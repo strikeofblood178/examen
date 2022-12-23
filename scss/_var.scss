@@ -7,11 +7,14 @@
     --changing: rgba(241, 98, 20, 0.15);
 
     --block: 1170px;
-    --gutter: 10px 10px;
+    // --gutter: 10px 10px;
+    --gutter: 10px;
 
 
     --font: 'Product Sans';
 
+    // width
+    --width: 1436px;
 
     --size_small: 13px;
     --size_title: 14px;
@@ -23,5 +26,6 @@
     --btn_rd_big: 54px;
 
 
-    --trs: all .6s ease-in-out;
+    // --trs: all .6s ease-in-out;
+    --trs: all .3s ease-in-out;
 }

@@ -1,0 +1,51 @@
+.sushi__img {
+    padding-top: 1.875rem;
+    @include flex($cross: center, $main: center);
+    width: 881px;
+}
+
+.sushi__product{
+    width: 881px;
+}
+
+.sushi__title{
+    padding-right: 30px;
+}
+
+.sushi{
+    @include flex($main: start, $gap: 93px, $cross: center);
+    margin: 0 auto;
+    height: 740px;
+    max-width: 1920px;
+    // background: rgb(184, 184, 213);
+    // padding-bottom: 80px;
+}
+
+.sushi__h1_2 {
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.sushi__text {
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 570px;
+    color: #888888;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.sushi__work {
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--primary);
+    /* text-align: center; */
+}

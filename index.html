@@ -5,41 +5,49 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Examen</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="./icons.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
+  <div class="header__sticky">
+
   <header class="header">
-    <div class="header__type">
-
-
-    <div class="header__padding">
-
-
-    <!-- <div class="header__container"> -->
-      <img src="./img/logo (2).png" alt="">
+    <div class="container">
       <nav class="navbar">
-        <a class="header__link" href="#home">Home</a>
-        <a class="header__link" href="#sushi">How to work</a>
-        <a class="header__link" href="#s">Services</a>
-        <a class="header__link" href="#g">Product</a>
-        <a class="header__link" href="#slider">Contact</a>
+        <div class="img__food"></div>
+
+        <div class="nav">
+          <a href="#home" class="nav__link">Home</a>
+          <a href="#sushi" class="nav__link">How to work</a>
+          <a href="#s" class="nav__link">Services</a>
+          <a href="#g" class="nav__link">Product</a>
+          <a href="#slider" class="nav__link">Contact</a>
+        </div>
+
+        <div class="auth">
+          <a href="#" class="liv__link">
+            <i class="fas fa-user"></i>
+            <span>Login</span>
+          </a>
+          <a href="#" class="auth__link btn btn--icon">
+            <i class="fas fa-lock"></i>
+            <span>Register</span>
+          </a>
+        </div>
+
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </nav>
-
-    <!-- </div> -->
-
-    <div class="header__btn">
-      <input class="header__log" type="button" value="Register">
     </div>
-
-  </div>
-
-
-  </div>
   </header>
+
 
 
 
@@ -60,19 +68,29 @@
     </div>
 
       <div class="section__strok">
+        <a class="section__twit" target="_blank" href="https://www.facebook.com/campaign/landing.php?campaign_id=1637278002&extra_1=s%7Cc%7C313958888526%7Ce%7Cfacebook%7C&placement=&creative=313958888526&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1637278002%26adgroupid%3D62332989517%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1009827%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiAkfucBhBBEiwAFjbkr4H8NarvP7hOkLX8J6HdPYo1fHi9SorztkCHCDfSq34YpwPSdWw0OBoCxngQAvD_BwE">
         <div class="section__icon icon-facebook"></div>
+      </a>
+      <a class="section__twit" target="_blank" href="https://ru.linkedin.com/">
         <div class="section__icon icon-twitter"></div>
+      </a>
+      <a class="section__twit" target="_blank" href="https://www.instagram.com/">
         <div class="section__icon icon-instagram"></div>
+      </a>
+      <a class="section__twit" target="_blank" href="https://web.telegram.org/z/">
         <div class="section__icon icon-search"></div>
+      </a>
       </div>
 
       
     </div>
 
     <div class="section_img">
-      <img src="./img/Product image.png" alt="">
+      <img class="section__product" src="./img/Product image.png" alt="">
     </div>
   </section>
+
+
 
 
 
@@ -108,7 +126,8 @@
         <div class="main__hover">
           <div class="section1__icons icon-phone"></div>
         </div>
-        <p class="main__title">+17602781253</p>
+
+        <a class="main__title" href="tel:+380441234567">+17602781253</a>
         <p class="main__text">Call Online</p>
 
       </div>
@@ -117,17 +136,21 @@
   </section>
 
 
-  <section id="sushi" class="section sushi">
 
-    <div class="section_img img__left">
-      <img src="./img/sushi-sashimi-smoked-salmon-japanese-cuisine-onigiri-sushi-7ca71738ec75ea9dd90d4310264dcc9e.png" alt="">
+
+
+
+  <section id="sushi" class="sushi">
+
+    <div class="sushi__img img__left">
+      <img class="sushi__product" src="./img/sushi-sashimi-smoked-salmon-japanese-cuisine-onigiri-sushi-7ca71738ec75ea9dd90d4310264dcc9e.png" alt="">
     </div>
 
-    <div class="section__title">
-      <p class="section__work">How to work</p>
-      <h1 class="section__h1_2">Food Is An Important Part Of <br>
+    <div class="sushi__title">
+      <p class="sushi__work">How to work</p>
+      <h1 class="sushi__h1_2">Food Is An Important Part Of <br>
         A Balanced Diet.</h1>
-      <p class="section__text">At the same time there are many new diet programs appearing in sight. While some people find them useful, others say they can be dangerous. As for me, I think that selective eating can be very good for one’s health. It can help to keep the balance of all the necessary nutrients. Such behavior is called a balanced diet. Almost all doctors and nutritionists support this program.
+      <p class="sushi__text">At the same time there are many new diet programs appearing in sight. While some people find them useful, others say they can be dangerous. As for me, I think that selective eating can be very good for one’s health. It can help to keep the balance of all the necessary nutrients. Such behavior is called a balanced diet. Almost all doctors and nutritionists support this program.
       </p>
 
       <div class="section__composit">
@@ -137,12 +160,7 @@
       </div>
     </div>
 
-      <!-- <div class="section__strok">
-        <div class="section__icon icon-facebook"></div>
-        <div class="section__icon icon-twitter"></div>
-        <div class="section__icon icon-instagram"></div>
-        <div class="section__icon icon-search"></div>
-      </div> -->
+    
 
       
     </div>
@@ -152,40 +170,83 @@
 
 
 
+
+
 <section id="s" class="section2">
   <div class="section2__title">
     <p class="title__services">Services</p>
     <h1 class="title__text">Why Choose Our Favorite Food</h1>
   </div>
   <div class="section2__colum">
-    <div class="section2__card">
+   
 
-      <div class="card__border">
+    
+      <div class="block card__border">
         <div class="img__block one_img">
-          <!-- <img src="./icon_img/spoon.png" alt=""> -->
+      
+          
+          <svg  width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="svg" d="M27 0V30H24V18H19.5V7.5C19.5 5.51088 20.2902 3.60322 21.6967 2.1967C23.1032 0.790176 25.0109 0 27 0ZM9 17.85V30H6V17.85C4.30621 17.5037 2.78399 16.5831 1.69072 15.2438C0.597446 13.9045 0.000211598 12.2288 0 10.5V1.5H3V12H6V1.5H9V12H12V1.5H15V10.5C14.9998 12.2288 14.4026 13.9045 13.3093 15.2438C12.216 16.5831 10.6938 17.5037 9 17.85Z" fill="#F16214"/>
+            </svg>
+            
         </div>
+        <a class="section2__a" href="">
         <p class="card_title">Qualityfull Food</p>
+      </a>
         <p class="card_text">Japanese. Very varied, seasonal and as fresh <br> as possible (a rare dish is boiled / fried for <br> too long) Low-fat food.
         </p>
       </div>
 
-      <div class="card__border">
-        <div class="img__block two_img">
-          <!-- <img src="./icon_img/fork.png" alt=""> -->
+
+
+
+      <div class="block11 card__border">
+        <div class="img__block one_img">
+          
+          
+          <svg  width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="svg" d="M27 0V30H24V18H19.5V7.5C19.5 5.51088 20.2902 3.60322 21.6967 2.1967C23.1032 0.790176 25.0109 0 27 0ZM9 17.85V30H6V17.85C4.30621 17.5037 2.78399 16.5831 1.69072 15.2438C0.597446 13.9045 0.000211598 12.2288 0 10.5V1.5H3V12H6V1.5H9V12H12V1.5H15V10.5C14.9998 12.2288 14.4026 13.9045 13.3093 15.2438C12.216 16.5831 10.6938 17.5037 9 17.85Z" fill="#F16214"/>
+            </svg>
+            
         </div>
-        <p class="card_title">Healthy Food</p>
+        <a class="section2__a" href="">
+        <p class="card_title">Qualityfull Food</p>
+      </a>
+        <p class="card_text">Japanese. Very varied, seasonal and as fresh <br> as possible (a rare dish is boiled / fried for <br> too long) Low-fat food.
+        </p>
+      </div>
+
+
+      <div class="block12 card__border">
+        <div class="img__block two_img">
+        
+
+          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="svg" d="M1.98102 0.124435L13.3333 11.4767L8.55375 16.2579L1.97933 9.68353C0.711966 8.41578 0 6.69658 0 4.90398C0 3.11139 0.711966 1.39218 1.97933 0.124435H1.98102ZM18.9596 14.2163L17.5162 15.6597L29.4668 27.6102L27.077 30L15.1265 18.0511L3.17591 30L0.786134 27.6102L16.5698 11.8266C15.576 9.36411 16.6036 5.81832 19.3077 3.11081C22.6085 -0.188231 27.1565 -0.991019 29.4668 1.31932C31.7772 3.62966 30.9744 8.17767 27.6753 11.4767C24.9678 14.1842 21.422 15.2118 18.9596 14.2163Z" fill="#F16214"/>
+            </svg>
+        </div>
+      
+        <a class="section2__a" href="">
+          <p class="card_title">Healthy Food</p>
+        </a>
         <p class="card_text">High-quality is fresh, without preservatives <br> (instead of mushrooms from a can, fresh is <br> better, etc.). And delicious, of course.
         </p>
       </div>
 
-    </div>
 
-    <div class="card__border">
+    <div class="block13 card__border">
       <div class="img__block three_img">
-        <!-- <img src="./icon_img/car.png" alt=""> -->
+       
+
+        <svg  width="42" height="30" viewBox="0 0 42 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="svg" d="M14.9285 24.3655C14.7057 25.9291 13.9262 27.3599 12.7332 28.395C11.5401 29.4301 10.0137 30 8.4342 30C6.85472 30 5.32827 29.4301 4.13523 28.395C2.94219 27.3599 2.16268 25.9291 1.93987 24.3655H0V1.87427C0 1.37718 0.197467 0.900453 0.54896 0.54896C0.900453 0.197467 1.37718 0 1.87427 0H28.114C28.6111 0 29.0878 0.197467 29.4393 0.54896C29.7908 0.900453 29.9883 1.37718 29.9883 1.87427V5.6228H35.6111L41.2339 13.2248V24.3655H37.4197C37.1969 25.9291 36.4174 27.3599 35.2244 28.395C34.0313 29.4301 32.5049 30 30.9254 30C29.3459 30 27.8195 29.4301 26.6264 28.395C25.4334 27.3599 24.6539 25.9291 24.4311 24.3655H14.9285ZM26.2397 3.74853H3.74853V18.8364C4.48805 18.0814 5.39901 17.5163 6.4039 17.1891C7.40879 16.8619 8.47786 16.7824 9.5201 16.9572C10.5624 17.1321 11.5469 17.5561 12.39 18.1933C13.2332 18.8305 13.9098 19.662 14.3625 20.6169H24.9971C25.312 19.9553 25.7337 19.3537 26.2397 18.8364V3.74853ZM29.9883 14.9941H37.4853V14.46L33.7218 9.37133H29.9883V14.9941ZM30.9254 26.2397C31.6713 26.2397 32.3866 25.9434 32.914 25.416C33.4414 24.8886 33.7377 24.1733 33.7377 23.4274C33.7377 22.6815 33.4414 21.9662 32.914 21.4388C32.3866 20.9114 31.6713 20.6151 30.9254 20.6151C30.1795 20.6151 29.4642 20.9114 28.9368 21.4388C28.4094 21.9662 28.1131 22.6815 28.1131 23.4274C28.1131 24.1733 28.4094 24.8886 28.9368 25.416C29.4642 25.9434 30.1795 26.2397 30.9254 26.2397ZM11.2456 23.4283C11.2456 23.0591 11.1729 22.6935 11.0316 22.3525C10.8903 22.0114 10.6832 21.7014 10.4222 21.4404C10.1611 21.1793 9.85117 20.9722 9.51007 20.8309C9.16898 20.6896 8.8034 20.6169 8.4342 20.6169C8.065 20.6169 7.69942 20.6896 7.35832 20.8309C7.01723 20.9722 6.7073 21.1793 6.44624 21.4404C6.18518 21.7014 5.97809 22.0114 5.8368 22.3525C5.69552 22.6935 5.6228 23.0591 5.6228 23.4283C5.6228 24.174 5.919 24.889 6.44624 25.4163C6.97348 25.9435 7.68857 26.2397 8.4342 26.2397C9.17983 26.2397 9.89492 25.9435 10.4222 25.4163C10.9494 24.889 11.2456 24.174 11.2456 23.4283Z" fill="#F16214"/>
+          </svg>
       </div>
-      <p class="card_title">Fast Delivery</p>
-      <p class="card_text">350 best editions of the city for every taste, <br> food and alcohol delivery from supermarkets <br> and markets, medicines from pharmacies, <br> personal courier services, all this is in your <br> pocket.
+   
+      <a class="section2__a" href="">
+        <p class="card_title">Fast Delivery</p>
+      </a>
+      <p class="card_text">350 best editions of the city for every taste, <br> food and alcohol delivery from supermarkets <br> and markets, medicines.
       </p>
     </div>
   </div>
@@ -196,7 +257,9 @@
 
 
 
-<section id="g" class="grid">
+
+
+ <section id="g" class="grid">
   <div class="grid__text">
     <p class="title__services">Product</p>
     <p class="title__text">Most Popular Items</p>
@@ -285,7 +348,7 @@
 
     </div>
 
-    <div class="grid__colum">
+    <div class="grid__rows">
       <div class="grid__top">
         <div class="grid__img">
           <img class="grid__image" src="./img/grid_5.png" alt="">
@@ -326,12 +389,16 @@
   </div>
 
   <div class="section__composit">
-    <input class="section__btn" type="button" value="See More Product">
-    <div class="section__arrow">
+    <input class="section__btn section__develop" type="button" value="See More Product">
+    <div class="section__arrow section__ball">
     <img class="section__icon_arrow" src="./icon_img/arrow_btn.png" alt="">
   </div>
 </div>
-</section>
+</section> 
+
+
+
+
 
 
 
@@ -344,12 +411,12 @@
   <div class="masanger__colum">
     <div class="masanger__apple">
 
-      <!-- <div class="masenger__trs"> -->
+   
       <h1 class="masenger__title">
         Simple Way To <br>
         Order Your Foods
       </h1>
-    <!-- </div> -->
+
 
      <div class="massanger__row">
 
@@ -364,16 +431,22 @@
       </div>
 
       <div class="masanger__img">
-        <a class="masenger__hover" href="#home">
+        <a class="masenger__hover masanger__pading" href="#home">
+          <div class="masanger__hidden">
         <img class="google" src="./img/Mine Page-300.png" alt="">
+      </div>
       </a>
 
       <a class="masenger__hover" href="#s">
+        <div class="masanger__hidden masanger_none">
         <img class="google" src="./img/Food Details-300.png" alt="">
+      </div>
       </a>
      </div>
  </div>
 </section>
+
+
 
 
 
@@ -401,7 +474,7 @@
 
         </div>
 
-        <p class="card_text text__slider">"Were you on February 23, as usual, ordered dishes from Indian cuisine and,  as usual, everything is on top, as far as I understand, because the chef is  Indian! I would also like to note the work of our waiter, her name is Olga,  knows the composition of dishes, thanks to which she can very correctly  help with the choice of dishes and drinks. Portions are big. the prices are adequate, for four we ate and drank for 3000 rubles. I wish you prosperity  and success!</p>
+        <p class="text__slider">"Were you on February 23, as usual, ordered dishes from Indian cuisine and,  as usual, everything is on top, as far as I understand, because the chef is  Indian! I would also like to note the work of our waiter, her name is Olga,  knows the composition of dishes, thanks to which she can very correctly  help with the choice of dishes and drinks. Portions are big!</p>
         <div class="slider__button">
           <div class="slider__btn icon-arrow-left2">
           </div>
@@ -429,17 +502,17 @@
 
   </div>
 
-  <div class="masanger__colum">
+  <div class="masanger__columbiana">
 
     <div class="masanger__img">
       <a class="masenger__hover" href="#">
-      <img class="hamburger" src="./img/hamburger-veggie-burger-take-out-fast-food-kebab-delicious-beef-burger-695bdb4c987243b9c11340e4fd3cec41.png" alt="">
+      <img class="hamburgers" src="./img/hamburger-veggie-burger-take-out-fast-food-kebab-delicious-beef-burger-695bdb4c987243b9c11340e4fd3cec41.png" alt="">
       </a>
    </div>
 
 
     <div class="masanger__apple">
-      <h1 class="masenger__title">
+      <h1 class="masenger__atribut">
         Subcribe To Our Newsletter
       </h1>
       <p class="card_texteria">
@@ -467,26 +540,37 @@
       <img src="./img/logo (4).png" alt="">
       <p class="footer__text">We invite everyone to visit our restaurant Food Bill, forward to meet incredible sensations
       </p>
+    
       <div class="section__strok">
+        <a class="section__twit" target="_blank" href="https://www.facebook.com/campaign/landing.php?campaign_id=1637278002&extra_1=s%7Cc%7C313958888526%7Ce%7Cfacebook%7C&placement=&creative=313958888526&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1637278002%26adgroupid%3D62332989517%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1009827%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiAkfucBhBBEiwAFjbkr4H8NarvP7hOkLX8J6HdPYo1fHi9SorztkCHCDfSq34YpwPSdWw0OBoCxngQAvD_BwE">
         <div class="section__icon icon-facebook"></div>
+      </a>
+      <a class="section__twit" target="_blank" href="https://ru.linkedin.com/">
         <div class="section__icon icon-twitter"></div>
+      </a>
+      <a class="section__twit" target="_blank" href="https://www.instagram.com/">
         <div class="section__icon icon-instagram"></div>
+      </a>
+      <a class="section__twit" target="_blank" href="https://web.telegram.org/z/">
         <div class="section__icon icon-search"></div>
+      </a>
       </div>
     </div>
 
-    <div class="footer__two">
+    <div class="footer__two footer__general">
       <h1 class="footer__title">Opening Restaurant</h1>
-      <p class="footer__texteria">Sa - We: 09:00am - 10:00pm <br>
-        Thursday: 09:00am - 05:00pm <br>
-        Friday: Closed</p>
+     
+
+        <a href="#" class="footer__link footer__about">CSa - We: 09:00am - 10:00pm </a>
+        <a href="#" class="footer__link">Thursday: 09:00am - 05:00pm </a>
+        <a href="#" class="footer__link">Friday: Closed</a>
 
     </div>
 
   </div>
 
   <div class="footer__right">
-    <div class="footer__three">
+    <div class="footer__three footer__general">
       <h1 class="footer__title">User Link</h1>
       <a href="#" class="footer__link footer__about">About Us</a>
       <a href="#" class="footer__link">Contact Us</a>
@@ -494,11 +578,12 @@
       <a href="#" class="footer__link">Payment & Tax</a>
       <a href="#" class="footer__link">Terms of Services</a>
     </div>
-    <div class="footer__four">
+    <div class="footer__four footer__general">
       <h1 class="footer__title">Contact Us</h1>
-      <p class="footer__texteria">543 Country Club Ave, <br>
-        NC 27587, London, UK <br>
-        +1259 6541120</p>
+    
+        <a href="#" class="footer__link footer__about">543 Country Club Ave,</a>
+        <a href="#" class="footer__link">NC 27587, London, UK</a>
+        <a href="tel:+380441234567" class="footer__link footer__namber">+1259 6541120</a>
         <div class="input">
           <input class="footer_input" type="text" placeholder="Enter your email...">
           <button class="icon-arrow-right2 footer__btn"></button>
@@ -517,6 +602,20 @@
 
 
 
+</div>
+
+<script>
+  // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  var nav = document.querySelector(".nav");
+  // On click
+  hamburger.addEventListener("click", function () {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    nav.classList.toggle("is-active");
+    // Do something else, like open/close menu
+  });
+</script>
 
 
 

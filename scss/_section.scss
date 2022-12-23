@@ -70,9 +70,10 @@
 .section{
   @include flex($cross: center,$main: center, $gap: 30px);
   margin: 0 auto;
-  height: 740px;
+  // height: 740px;
+  height: 900px;
   max-width: 1920px;
-  background: rgb(184, 184, 213);
+  // background: rgb(184, 184, 213);
   padding-bottom: 80px;
 }
 
@@ -98,5 +99,28 @@
 
 .section_img{
   padding-top: 1.875rem;
+  @include flex($cross: center, $main: center);
+  padding-right: 15px;
 }
 
+.section__title {
+  padding-left: 15px;
+}
+
+.section__twit{
+  text-decoration: none;
+  border-radius: 50%;
+  
+}
+
+
+
+// transform input
+
+.section__develop{
+  width: 200px;
+}
+.section__ball{
+  margin-left: 0;
+  right: 5px;
+}

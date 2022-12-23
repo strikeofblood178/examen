@@ -1,9 +1,16 @@
-$phone: 320px
-$tablet: 768px
+$phone: 571px
+// прибавил 50 px
+$average: 770px
+$tablet: 830px
 $laptop: 992px
-$desktop: 1200px
+$desktop: 1258px
+$bigscreen: 1560px
 =phone
   @media screen and (max-width: $phone)
+    @content
+
+=average
+  @media screen and (max-width: $average)
     @content
 
 =tablet
@@ -16,6 +23,10 @@ $desktop: 1200px
 
 =desktop
   @media screen and (max-width: $desktop)
+    @content
+
+=bigscreen
+  @media screen and (max-width: $bigscreen)
     @content
 
 =media($size)

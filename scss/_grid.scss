@@ -6,7 +6,7 @@
     margin: 0 auto;
     max-width: 120rem;
     height: 1306px;
-    background: rgb(184, 184, 213);
+    // background: rgb(184, 184, 213);
 }
 
 .grid__text{
@@ -17,6 +17,8 @@ text-align: center;
     display: flex;
     gap: 30px;
     margin-bottom: 5.625rem;
+    // width: 74rem;
+    // flex-wrap: wrap;
 }
 .grid__box{
     display: flex;
@@ -26,8 +28,16 @@ text-align: center;
     display: flex;
     flex-direction: column;
     gap: 30px;
-
 }
+
+
+.grid__rows{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
 .grid__top {
     width: 370px;
     height: 419px;
@@ -109,7 +119,8 @@ text-align: center;
 }
 
 .gtid__button{
-    width: 100px;
+    // width: 100px;
+    width: 120px;
     background: var(--primary);
     border-radius: 50px;
     @include flex($cross: center, $main: center);

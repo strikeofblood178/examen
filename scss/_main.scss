@@ -3,7 +3,7 @@
     height: 217px;
     @include flex($main: center, $cross: center);
     margin: 0 auto;
-    background: rgb(184, 184, 213);
+    // background: rgb(184, 184, 213);
 }
 .section1__container{
     background: #FFFFFF;
@@ -12,7 +12,9 @@
     width: 1170px;
     height: 217px;
     @include flex($cross: center, $main: space-around);
-    
+
+    // добавил
+    margin: 0 40px;
 }
 
 .section1__block{
@@ -21,6 +23,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    width: 12.25rem;
     
 }
 .section1__icons{
@@ -42,6 +45,8 @@
     }
 }
 .main__title{
+    text-decoration: none;
+    color: var(--brand);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;

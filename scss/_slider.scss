@@ -2,7 +2,7 @@
     max-width: 1920px;
     height: 754px;
     margin: 0 auto;
-    background: rgb(184, 184, 213);
+    // background: rgb(184, 184, 213);
     @include flex($main: start,);
 }
 
@@ -45,13 +45,13 @@
     height: 50px;
     @include flex($cross: center, $main: center);
     color: white;
-    transition: var(--trs);
-    &:hover{
+    // transition: var(--trs);
+    &:active{
         border: 1.5px solid var(--primary);
         color: var(--primary);
         background: var(--light);
         cursor: pointer;
-        transition: var(--trs);
+        // transition: var(--trs);
     }
 }
 
@@ -100,6 +100,14 @@
 }
 
 .text__slider{
-    text-align: center;
+    // text-align: center;
     max-width: 586px;
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #888888;
+    margin: 0 20px;
 }

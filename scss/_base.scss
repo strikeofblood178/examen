@@ -6,5 +6,12 @@
 body{
     font-family: var(--font);
     
-    font-size: var(--size_small);
+    // font-size: var(--size_small);
+    font-size: 1rem;
 }
+
+.container {
+    max-width: var(--width);
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }

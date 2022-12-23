@@ -6,7 +6,7 @@
     height: 500px;
     @include flex($cross: center, $main: center);
     margin: 0 auto;
-    background: rgb(184, 184, 213);
+    // background: rgb(184, 184, 213);
 }
 
 
@@ -21,11 +21,26 @@
     width: 1170px;
     border-radius: 60px 0px;
     @include flex($cross: center, $main: center);
+    position: absolute;
 }
 
-.hamburger{
+.hamburgers{
     width: 31.875rem;
 }
+
+.masanger__hidden{
+    @include flex($cross:center, $main: center);
+    height: 34.5625rem;
+    border-radius: 52px;
+    width: 15.75rem;
+    overflow: hidden;
+    box-shadow: 20px 28px 90px -15px rgba(0, 0, 0, 0.2);
+}
+
+.masanger__pading{
+    margin-bottom: 60px;
+}
+
 
 .card_texteria{
     font-family: "Product Sans";
@@ -50,7 +65,7 @@
     width: 500px;
     height: 60px;
     background: var(--light);
-    color: #CCCCCC;
+    // color: #CCCCCC;
     border-radius: 13px;
     padding-left: 19px;
 }
@@ -65,13 +80,32 @@
     position: absolute;
     border: inherit;
     margin-right: 0.3125rem;
-    transition: var(--trs);
-    &:hover{
+    // transition: var(--trs);
+    &:active{
         cursor: pointer;
         color: var(--primary);
         background: var(--light);
         border: 2px solid var(--primary);
-        transition: var(--trs);
+        // transition: var(--trs);
     }
 }
 
+.masanger__columbiana{
+    width: 68.4375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.masenger__atribut{
+    color: var(--light);
+    font-family: "Product Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    margin: 0rem;
+    transition: var(--trs);
+    /* max-width: 20.3125rem; */
+}

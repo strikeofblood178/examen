@@ -6,13 +6,15 @@ height: 723px;
  justify-content: center;
  align-items: center;
  margin: 0 auto;
- background: rgb(184, 184, 213);
+//  background: rgb(184, 184, 213);
 }
+
 .section2__title{
     text-align: center;
 
 
 }
+
 .title__services{
     font-family: 'Product Sans';
 font-style: normal;
@@ -21,9 +23,9 @@ font-size: 14px;
 line-height: 17px;
 /* identical to box height */
 
-
 color: #F16214;
 }
+
 .title__text{
     font-family: 'Product Sans';
 font-style: normal;
@@ -33,84 +35,102 @@ line-height: 49px;
 margin-top: 6px;
 margin-bottom: 59px;
 }
+
 .section2__colum{
-    display: flex;
-    gap: 30px;
-    
+    @include flex($cross: center, $main: center, $gap: 1.875rem);
+    flex-wrap: wrap;
+    margin: 0 16px;
 }
+
+
 .section2__card{
     display: flex;
     gap: 30px;
    
 }
+
+
 .card__border{
     height: 395px;
     border: 2px solid #EEEEEE;
     border-radius: 60px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     width: 370px;
     transition: var(--trs);
+    padding-top: 4.375rem;
     &:hover{
         transition: var(--trs);
         cursor: pointer;
         transform: scale(1.090);
+        box-shadow: 5px 15px 45px rgba(0, 0, 0, 0.1);
     }
-
 }
+
+
+
 .img__block{
     height: 80px;
     border-radius: 50%;
     background: rgba(241, 98, 20, 0.15);
     @include flex($cross: center, $main: center);
     width: 80px;
-}
-
-.one_img{
-    background-image: url("../icon_img/spoon.png");
-    background-repeat: no-repeat;
-    background-position: center;
     transition: var(--trs);
-    &:hover{
-        cursor: pointer;
-        transition: var(--trs);
-        background-color: var(--primary) ;
-        background-image: url("../icon_img/Vector\ \(2\).png");
-
-    }
 }
 
 
-.two_img{
-    background-image: url("../icon_img/fork.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: var(--trs);
-    &:hover{
-        cursor: pointer;
-        transition: var(--trs);
-        background-color: var(--primary) ;
-        background-image: url("../icon_img/Vector\ \(3\).png");
+// .one_img{
+//     // background-image: url("../icon_img/spoon.png");
+//     // background-image: url(../img/spoon_and_fork.svg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     transition: var(--trs);
+//     fill: white;
+//     // &:hover{
+//     //     cursor: pointer;
+//     //     transition: var(--trs);
+//     //     background-color: var(--primary) ;
+//     //     background-image: url("../icon_img/Vector\ \(2\).png");
 
-    }
-}
+//     // }
+//     &:hover{
+//         fill: white;
+//     }
+// }
 
 
-.three_img{
-    background-image: url("../icon_img/car.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: var(--trs);
-    &:hover{
-        cursor: pointer;
-        transition: var(--trs);
-        background-color: var(--primary) ;
-        background-image: url("../icon_img/Vector\ \(4\).png");
+// .two_img{
+//     // background-image: url("../icon_img/fork.png");
+//     // background-image: url(../img/fork_knife.svg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     transition: var(--trs);
+//     // &:hover{
+//     //     cursor: pointer;
+//     //     transition: var(--trs);
+//     //     background-color: var(--primary) ;
+//     //     background-image: url("../icon_img/Vector\ \(3\).png");
 
-    }
-}
+//     // }
+// }
+
+
+// .three_img{
+//     // background-image: url("../icon_img/car.png");
+//     // background-image: url(../img/avtobus.svg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     transition: var(--trs);
+//     // &:hover{
+//     //     cursor: pointer;
+//     //     transition: var(--trs);
+//     //     background-color: var(--primary) ;
+//     //     background-image: url("../icon_img/Vector\ \(4\).png");
+
+//     // }
+// }
 
 
 
@@ -124,6 +144,8 @@ line-height: 32px;
 margin-top: 44px;
 margin-bottom: 22px;
 }
+
+
 .card_text{
     font-family: 'Product Sans';
 font-style: normal;
@@ -135,4 +157,33 @@ line-height: 160%;
 text-align: center;
 
 color: #888888;
+}
+
+.section2__a{
+    color: var(--brand);
+    text-decoration: none;
+    &:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transition: var(--trs);
+}
+}
+
+
+.block{
+    display: none;
+}
+
+
+.card__border ~ :hover .img__block{
+    background: #F16214;
+    transition: var(--trs);
+}
+.svg{
+    transition: var(--trs);
+    // fill: #EEEEEE;
+}
+.card__border ~ :hover .svg{
+    fill: #EEEEEE;
+    transition: var(--trs);
 }

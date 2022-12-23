@@ -1,0 +1,560 @@
+// section
+
+.section{
+    @include desktop {
+        gap: 0;
+    }
+    @include laptop{
+        // flex-direction: column;
+        flex-direction: column-reverse;
+        height: 1042px;
+        padding-bottom: 0;
+    }
+    @include tablet{
+        height: 1012px;
+    }
+    @include phone{
+        height: 1122px;
+    }
+}
+
+.section_img{
+    @include desktop {
+        width: 600px;
+        position: absolute;
+        right: 0;
+        // padding-right: 30px;
+        padding-right: 55px;
+    }
+    @include laptop{
+        flex-direction: column;
+        position: relative;
+        padding-right: 0;
+        padding-top: 0;
+        margin-bottom: -110px;
+    }
+    @include tablet{
+        width: 500px;
+    }
+    @include phone{
+        width: 336px;
+        margin-bottom: 0;
+    }
+}
+
+.section__text{
+    @include phone{
+        // height: 105px;
+        width: 299px;
+        text-align: center;
+    }
+
+}
+
+
+
+
+.section__product{
+    @include desktop {
+        width: 600px;
+    }
+    @include tablet{
+        width: 500px;
+    }
+    @include phone{
+        width: 336px;
+    }
+}
+
+.section__title{
+    @include desktop {
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        padding-left: 30px;
+    }
+    @include laptop{
+        flex-direction: column;
+        position: relative;
+        padding-left: 0;
+        padding-right: 60px;
+    }
+    @include tablet{
+        padding-right: 0;
+    }
+    @include phone{
+        @include flex($main: center, $cross: center);
+    }
+}
+
+.section__h1{
+    @include desktop {
+        color: var(--primary);
+    }
+    @include phone{
+        width: 400px;
+    }
+}
+
+
+
+// section1
+
+.main__wall{
+    @include laptop {
+        display: none;
+    }
+}
+
+.section1{
+    @include laptop {
+        height: 353px;
+    }
+    @include phone{
+        height: 533px;
+    }
+}
+
+.section1__container{
+    @include laptop {
+        border-radius: 0px; 
+        height: 300px;
+        width: opx; 
+        box-shadow: none;
+        flex-wrap: wrap;
+        gap: 40px; 
+        background-color: inherit;
+    }
+    @include phone{
+        height: 400px;
+    }
+}
+
+
+
+
+// sushi
+
+
+
+
+.sushi{
+    @include bigscreen{
+        gap:0px;
+    }
+    @include desktop {
+        flex-direction: column;
+        justify-content: center;
+        height: 1100px;
+        gap: 60px;
+    }
+    @include average {
+        height: 1180px;
+    }
+}
+
+.sushi__title {
+    @include bigscreen{
+        z-index: 10;
+        right: 0;
+        padding-right: 70px;
+        position: absolute;
+    }
+    @include desktop {
+        position: relative;
+        padding-right: 0;
+    }
+    @include phone{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.sushi__img {
+    @include bigscreen{
+        // width: 634px;
+        position: absolute;
+        left: 0;
+    }
+    @include desktop {
+        position: relative;
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+.sushi__product {
+    @include laptop {
+        width: 634px;
+   }
+   @include average {
+    width: 414px;
+}
+}
+
+.sushi__h1_2{
+    @include average {
+        width: 249px;
+    }
+}
+.sushi__text{
+    @include average {
+        width: 286px;
+    }
+}
+
+
+
+
+
+// section2
+
+
+
+
+.section2{
+    @include desktop {
+        height: 1023px;
+    }
+    @include tablet{
+        height: 1623px;
+    }
+    @include average{
+        height: 1723px;
+    }
+}
+.section2__colum {
+    @include tablet{
+        gap: 45px;
+    }
+}
+
+.card__border{
+    @include phone{
+        width: 345px;
+    }
+}
+
+.title__text{
+    @include tablet{
+        width: 235px;
+    }
+}
+
+
+// grid
+
+
+.grid__container {
+    @include desktop {
+        flex-direction: column;
+    }
+}
+.grid__rows {
+    @include desktop {
+        flex-direction: row;
+    }
+    @include tablet{
+        display: none;
+    }
+}
+.grid__box {
+    @include tablet{
+        flex-direction: column;
+    }
+}
+
+.grid {
+    @include desktop {
+        height: 1778px;
+    }
+    @include tablet{
+        height: 2210px;
+    }
+}
+
+.grid__row {
+    @include phone{
+        width: 18.125rem;
+    }
+}
+
+.grid__img {
+    @include phone{
+        width: 320px;
+    }
+}
+
+.grid__top {
+    @include phone{
+        width: 320px;
+    }
+}
+
+
+// masanger
+
+
+.masanger{
+    @include desktop {
+        height: 1260px;
+    }
+    // @include tablet{
+    //     width: 990px;
+    // }
+    // @include average{
+    //     width: 899px
+    // }
+    // @include phone{
+    //     width: 800px;
+    // }
+}
+
+
+.masanger__block {
+    @include desktop {
+        height: 65.6875rem;
+        width: 40.6875rem;
+    }
+    @include tablet{
+        width: 501.13px;
+    }
+    @include phone{
+        width: 364.46px;
+    }
+}
+.masanger__colum {
+    @include desktop {
+        height: 58.125rem;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+
+.masanger_none{
+    @include phone{
+        display: none;
+    }
+}
+
+.massanger__row {
+    @include phone{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.masanger__img {
+    @include phone{
+        gap: 0;
+    }
+}
+
+.masanger__hidden {
+    @include tablet{
+        box-shadow: -20px 47px 90px -15px rgba(0, 0, 0, 0.42);
+    }
+}
+
+
+// slider
+
+
+.slider{
+    @include desktop{
+        height: 1214px;
+        flex-direction: column;
+    }
+    @include phone{
+        justify-content: center;
+    }
+}
+
+.slider__block {
+    @include desktop{
+        margin-top: -250px;
+    }
+    @include phone{
+        margin-top: 0px;
+    }
+}
+
+.slider__flex {
+    @include desktop {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+}
+
+.text__slider {
+    @include phone{
+        width: 265px;
+    }
+}
+.slider__big {
+    @include phone{
+        width: 241px;
+        text-align: center;
+    }
+}
+.slider__img {
+    @include phone{
+        display: none;
+    }
+}
+.slider__right{
+    @include flex($cross: center, $main: center);
+    @include phone{
+        width: 299px;
+    }
+}
+.lebanse{
+    @include phone{
+        width: 299px;
+    }
+}
+
+.slider__left {
+    @include phone{
+        align-items: center;
+    }
+}
+
+.text__slider{
+    text-align: start;
+}
+
+
+
+
+// masanger__two
+
+
+
+.masanger__two {
+    @include desktop {
+        height: 971px;
+    }
+}
+
+
+.masanger__block_two {
+    @include desktop {
+        height: 801px;
+        width: 649px;
+    }
+    @include average{
+        height: 801px;
+        width: 305.06px;
+    }
+}
+
+.masanger__columbiana {
+    @include desktop {
+        flex-direction: column;
+        margin-top: -300px;
+        gap: 50px;
+    }
+    @include average{
+        gap: 30px;
+        margin-top: -90px;
+    }
+}
+
+// .masanger__img {
+//     @include laptop{
+//         width: 326px;
+//     }
+// }
+
+.hamburgers {
+    @include average{
+        width: 326px;
+    }
+}
+
+.masenger__atribut {
+    @include average{
+        max-width: 231px;
+    }
+}
+
+.card_texteria {
+    @include average{
+        max-width: 218px;
+    }
+}
+
+.masanger__btn1 {
+    @include average{
+        max-width: 250px;
+    }
+}
+
+// footer
+
+
+.footer{
+    @include desktop {
+        height: 730px;
+    }
+    @include average{
+        // height: 1300px;
+        height: 900px;
+    }
+    @include phone{
+        height: 1300px;
+    }
+}
+
+.footer__box {
+    @include phone{
+        gap: 60px;
+    }
+}
+
+.hare {
+    @include desktop {
+        width: 506px;
+    }
+    @include average{
+        width: 306px;
+    }
+}
+
+
+.footer__left {
+    @include laptop {
+        gap: 45px;
+    }
+    @include phone{
+        
+    }
+}
+
+.footer__right {
+    @include laptop {
+        gap: 115px;
+    }
+    @include average{
+        gap: 75px;
+    }
+    @include phone{
+        gap: 45px;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+

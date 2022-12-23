@@ -1,0 +1,15 @@
+$hamburger-layer-color: var(--brand);
+$hamburger-padding-y: 0;
+$hamburger-types : (collapse);
+$hamburger-active-layer-color: var(--light);
+@import '../node_modules/hamburgers/_sass/hamburgers/hamburgers';
+
+.hamburger {
+  display: none;
+  align-items: center;
+  z-index: 11;
+
+  @include laptop {
+    display: inline-flex;
+  }
+}

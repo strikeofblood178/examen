@@ -1,0 +1,47 @@
+.btn {
+    --padding: 1rem 2.875rem;
+    --radius: 4px;
+  
+    display: inline-flex;
+    padding: var(--padding);
+    background: var(--primary);
+    color: var(--brand);
+    text-decoration: none;
+    cursor: pointer;
+    // font-weight: 600;
+    border: none;
+    border-radius: 120px;
+    transition: var(--trs);
+  
+    &:hover {
+      color: var(--light);
+      background: var(--light);
+      border: 2px solid var(--primary);
+      // filter: brightness(90%);
+    }
+  }
+  
+  .btn--light {
+    background: var(--light);
+  
+    &:hover {
+      color: var(--primary);
+      filter: none;
+    }
+  }
+  
+  .btn--wide {
+    --padding: 1rem 3.75rem;
+    min-width: 130px;
+    text-align: center;
+  }
+  
+  .btn--rounded {
+    --radius: 50px;
+  }
+  
+  
+  .btn--icon {
+    @include flex($cross: center, $gap: 10px);
+  }
+  

@@ -1677,7 +1677,6 @@ th {
   transition: var(--trs);
 }
 .auth__link:hover {
-  transform: scale(1.2);
   color: var(--brand);
 }
 @media screen and (max-width: 830px) {
@@ -1730,7 +1729,6 @@ th {
 }
 .liv__link:hover {
   color: var(--primary);
-  font-size: 21px;
 }
 @media screen and (max-width: 468px) {
   .liv__link {

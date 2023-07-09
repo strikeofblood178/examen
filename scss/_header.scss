@@ -223,7 +223,7 @@
       transition: var(--trs);
   
       &:hover{
-        transform: scale(1.2);
+        // transform: scale(1.2);
         color: var(--brand);
       }
   
@@ -285,7 +285,7 @@
   
     &:hover {
       color: var(--primary);
-      font-size: 21px;
+      // font-size: 21px;
     }
     @include media($size: 468px){
       display: none;
